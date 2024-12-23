@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Tech Blog</title>
     <link rel="stylesheet" href="style.css">
         <style>
@@ -50,7 +51,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .event {
+        .blog-post {
              margin-bottom: 25px;
             padding: 20px;
             border-radius: 8px;
@@ -58,25 +59,25 @@
         }
 
 
-        .event h2 {
+        .blog-post h2 {
             margin-bottom: 10px;
             color: #212529;
             font-size: 1.5em;
         }
 
-        .event-meta {
+        .post-meta {
             color: #6c757d;
             margin-bottom: 15px;
             font-style: italic;
         }
 
-        .event-image {
+        .post-image {
             max-width: 100%;
             height: auto;
             margin-bottom: 15px;
             border-radius: 4px;
         }
-        .event-read-more {
+        .read-more {
             display: inline-block;
             background-color: #007bff;
             color: #fff;
@@ -87,23 +88,10 @@
              transition: background-color 0.3s ease;
         }
 
-        .event-read-more:hover{
+        .read-more:hover{
             background-color: #0056b3;
         }
-        .gallery {
-              display: flex;
-             flex-wrap: wrap;
-            gap: 10px;
-             margin-top: 15px;
-        }
 
-        .gallery img {
-           width: 120px;
-            height: auto;
-            border-radius: 4px;
-             object-fit: cover;
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
         footer {
             text-align: center;
             padding: 1em 0;
@@ -118,41 +106,30 @@
     <header>
         <h1>Tech Blog</h1>
          <nav>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="blog.html">Blog</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
      <main>
-          <article class="event">
-            <h2>Tech Conference 2023</h2>
-            <p class="event-meta">Published on: December 15, 2023 by Admin</p>
-            <img src="tech_conference.jpg" alt="Tech Conference 2023" class="event-image">
+        <article class="blog-post">
+            <h2>Another New Gadget</h2>
+            <p class="post-meta">Published on: November 1, 2023 by Admin</p>
+            <img src="gadget.jpg" alt="New Gadget" class="post-image">
             <p>
-               A summary of the Tech Conference 2023 and all the happenings.
+                This is another blog post about a new gadget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div class="gallery">
-               <img src="event_image1.jpg" alt="event image 1">
-               <img src="event_image2.jpg" alt="event image 2">
-               <img src="event_image3.jpg" alt="event image 3">
-               <img src="event_image4.jpg" alt="event image 4">
-            </div>
-             <a href="#" class="event-read-more">Read More</a>
+            <a href="#" class="read-more">Read More</a>
         </article>
-        <article class="event">
-            <h2>Webinar on AI</h2>
-            <p class="event-meta">Published on: December 20, 2023 by Admin</p>
-            <img src="webinar_ai.jpg" alt="Webinar on AI" class="event-image">
+         <article class="blog-post">
+            <h2>New Mobile Version</h2>
+            <p class="post-meta">Published on: November 2, 2023 by Admin</p>
+            <img src="software.jpg" alt="Mobile version" class="post-image">
             <p>
-                All the details about the AI Webinar, and some cool discussions and photos.
+                This is a blog post about the latest mobile version update. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-           <div class="gallery">
-                 <img src="webinar_image1.jpg" alt="webinar image 1">
-                 <img src="webinar_image2.jpg" alt="webinar image 2">
-                 <img src="webinar_image3.jpg" alt="webinar image 3">
-             </div>
-             <a href="#" class="event-read-more">Read More</a>
+             <a href="#" class="read-more">Read More</a>
         </article>
     </main>
       <footer>
