@@ -112,6 +112,24 @@
             margin-top: 30px;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
+        #snowContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .snowflake {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -151,6 +169,7 @@
                  <img src="webinar_image1.jpg" alt="webinar image 1">
                  <img src="webinar_image2.jpg" alt="webinar image 2">
                  <img src="webinar_image3.jpg" alt="webinar image 3">
+                 <div id="snowContainer"></div>
              </div>
              <a href="#" class="event-read-more">Read More</a>
         </article>
@@ -160,6 +179,31 @@
     </footer>
     <script>
         console.log("JavaScript is working!");
+        document.addEventListener('DOMContentLoaded', function() {
+    const snowContainer = document.getElementById('snowContainer');
+    const numberOfSnowflakes = 50; // හිම පියලි ගණන
+
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.style.left = Math.random() * 100 + 'vw'; // තිරස් පිහිටීම
+        snowflake.style.top = -10 + 'px'; // සිරස් පිහිටීම (උඩින් පටන් ගන්න)
+        snowflake.style.animationDuration = Math.random() * 5 + 5 + 's'; // වැටෙන වේගය
+        snowflake.style.opacity = Math.random(); // පෙනෙන ප්‍රමාණය
+        snowflake.style.transform = `scale(${Math.random()})`; // ප්‍රමාණය වෙනස් කිරීම
+        snowContainer.appendChild(snowflake);
+
+        snowflake.addEventListener('animationend', () => {
+            snowflake.remove();
+        });
+    }
+
+    function startSnowing() {
+         setInterval(createSnowflake, 100); // නව හිම පියලි සෑදීමේ වේගය
+    }
+
+    startSnowing();
+});
     </script>
 </body>
 </html>
