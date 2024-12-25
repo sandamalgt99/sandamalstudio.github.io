@@ -6,20 +6,47 @@ body {
     color: #ffffff;
     line-height: 1.6;
 }
+/* Body CSS Change Previwe
+body {
+    background-color: #f0f2f5;
+    color: #212529;
+} */
 
 header {
-    background: #101010;
+    background: #5755552d;
     color: #ffffff;
     padding: 2;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0,1);
 }
+/* Header CSS Change Previwe I
+header {
+    background: #fff;
+    color: #212529;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+
+/* Header CSS Change Previwe II
+header {
+    background: #fff;
+    color: #212529;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+ 
 
 nav {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
+/* Nav CSS Change Previwe
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+} */
+ 
 
 nav a {
     color: #ffffff;
@@ -30,28 +57,84 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
+/* Nav a CSS Change Previwe I
+nav a {
+    color: #212529;
+    text-decoration: none;
+    margin: 0 1.2em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+} */
+
+/* Nav a CSS Change Previwe II
+nav a {
+    color: #212529;
+    text-decoration: none;
+    margin: 0 1.2em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+} */
+
+
+
 nav a:hover {
     background-color: #5f5b5bb0;
 }
+
+
+/* Nav a:hover CSS Change Previwe I
+nav a:hover {
+    background-color: #e9ecef;
+} */
+
+/* Nav a:hover CSS Change Previwe II
+nav a:hover {
+    background-color: #e9ecef;
+} */
+
+
 
 main {
     padding: 30px;
     max-width: 960px;
     margin: 30px auto;
-    background-color: #101010;
+    background: #5755552d;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
+/* Main CSS Change Previwe I
+main {
+    padding: 30px;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: white;
+     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+
+
+/* Main CSS Change Previwe II
+main {
+    padding: 30px;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+
 .blog-post {
     background: #5755552d;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
 }
 .blog-post:hover{
@@ -93,10 +176,10 @@ main {
 }
 
 .event {
+    background: #5755552d;
     margin-bottom: 25px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px #ffffff;
 }
 
 .event h2 {
@@ -133,7 +216,6 @@ main {
 }
 
 .gallery {
-    background: #5755552d;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -145,7 +227,6 @@ main {
     height: auto;
     border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 #snowContainer {
