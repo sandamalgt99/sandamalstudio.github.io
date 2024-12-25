@@ -133,6 +133,7 @@ main {
 }
 
 .gallery {
+    background: #5755552d;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
