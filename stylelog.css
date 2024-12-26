@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;; /* Black background */
+    color: #ffffff; /* White text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh;
+}
+
+/*
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010; 
+    color: #ffffff;
+    line-height: 1.6;
+} */
+
+header {
+    background: #5755552d;
+    color: #ffffff;
+    padding: 2;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #d30000;
+    text-decoration: none;
+    margin: 0 1.2em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #5f5b5bb0;
+}
+
+
+main {
+    padding: 30px;
+    max-width: 960px;
+    margin: 30px auto;
+    background: #5755552d;
+    padding: 40px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.default-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust for larger screens */
+}
+
+.content-wrapper.default {
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.woocommerce{
+        width: 100%;
+        max-width: 800px; /* Adjust max-width */
+    }
+.u-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+.u-column1, .u-column2 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .u-columns {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+
+h2 {
+    /*border-bottom: 1px solid #eee;
+    padding-bottom: 10px; */
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000; /* A black for headings */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.woocommerce-form-row {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.woocommerce-Input {
+    width: calc(100% - 15px); /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.woocommerce-Input:focus {
+    border-color: #3498db; /*  a blue for focus */
+    outline: none;
+}
+
+
+.woocommerce-button {
+    background-color: #3498db; /* blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.woocommerce-button:hover {
+    background-color: #2980b9; /* a darker blue on hover */
+}
+
+.lost_password {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.lost_password a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.lost_password a:hover {
+    text-decoration: underline;
+}
+
+.woocommerce-privacy-policy-text{
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+.woocommerce-privacy-policy-text a{
+        color: #045d99;
+        text-decoration: none;
+}
+.woocommerce-privacy-policy-text a:hover{
+            text-decoration: underline;
+}
+
+.p-text {
+    font-size-adjust: 0.400;
+  }
+  
+.screen-reader-text{
+        font-size: 13px;
+}
+
+.required{
+        font-size: 13px;
+}
